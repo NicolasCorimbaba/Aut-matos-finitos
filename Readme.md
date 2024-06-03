@@ -1,4 +1,4 @@
-# Simulador de Autômatos Finitos
+ #Simulador de Autômatos Finitos
 
 Um autômato finito tem um conjunto de estados, alguns dos quais são denominados estados finais. À medida que caracteres da string de entrada são lidos, o controle da máquina passa de um estado a outro, segundo um conjunto de regras de transição especificadas para o autômato. Se após o último caractere o autômato encontra-se em um dos estados finais, a string foi reconhecida (ou seja, pertence à linguagem). Caso contrário, a string não pertence à linguagem aceita pelo autômato.
 
@@ -12,37 +12,60 @@ Um autômato finito tem um conjunto de estados, alguns dos quais são denominado
 - **Exportação e Importação**: Permite salvar autômatos em arquivos para posterior importação e reutilização.
 - **Interface Interativa**: Interface de linha de comando (CLI) amigável para facilitar a interação com o simulador.
 
-## Execução do Programa
+## Execução do programa
 
-É necessário dois arquivos para o programa funcionar: `ex1.json` e `testes.csv`.
+    É necessário dois arquivos para o programa funcionar: `ex1.json` e `testes.csv`.
 
 ### ex1.json
 
-```json
-{
-  "initial": 0,
-  "final": [2],
-  "transitions": [
-    { "from": "0", "to": "0", "read": "a" },
-    { "from": "2", "to": "2", "read": "a" },
-    { "from": "1", "to": "1", "read": "b" },
-    { "from": "1", "to": "2", "read": "a" },
-    { "from": "0", "to": "1", "read": "b" }
-  ]
-}
-## testes.cvs
+        {
+        "initial": 0,
+        "final" : [2],
+        "transitions": [
+            {
+            "from": "0",
+            "to": "0",
+            "read": "a"
+            },
+            {
+            "from": "2",
+            "to": "2",
+            "read": "a"
+            },
+            {
+            "from": "1",
+            "to": "1",
+            "read": "b"
+            },
+            {
+            "from": "1",
+            "to": "2",
+            "read": "a"
+            },
+            {
+            "from": "0",
+            "to": "1",
+            "read": "b"
+            }
+        ]
+        }
 
-ba;1
-aaaabbbbbaaaaa;1
-abababab;0
-bbbbbbbb;0
-aaaaaaaaaaaa;0
-aaaaabaaaaa;1
+### testes.csv
 
-## Arquivo que o programa concede (resultados.csv)
-ba;1;1;0.00000540
-aaaabbbbbaaaaa;1;1;0.00000460
-abababab;0;0;0.00000310
-bbbbbbbb;0;0;0.00000190
-aaaaaaaaaaaa;0;0;0.00000240
-aaaaabaaaaa;1;1;0.00000220
+        ba;1
+        aaaabbbbbaaaaa;1
+        abababab;0
+        bbbbbbbb;0
+        aaaaaaaaaaaa;0
+        aaaaabaaaaa;1
+
+### Arquivo de Resultados (resultados.csv)
+
+    O programa gera esse arquivo:
+
+        aa;1;0;0.00001520
+        ab;1;0;0.00000690
+        ba;1;0;0.00000420
+        bb;0;0;0.00000330
+        aaa;0;0;0.00000500
+        bbb;0;0;0.00000390
