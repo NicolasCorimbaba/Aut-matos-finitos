@@ -11,7 +11,7 @@ Um autômato finito tem um conjunto de estados, alguns dos quais são denominado
 - **Exportação e Importação**: Permite salvar autômatos em arquivos para posterior importação e reutilização.
 - **Interface Interativa**: Interface de linha de comando (CLI) amigável para facilitar a interação com o simulador.
 
-  ## Execução do programa
+  ### Execução do programa
   É necessário dois arquivos para o programa funcionar (arquivo ex1.json e o arquivo testes.cvs).
 
   ## ex1.JSON
