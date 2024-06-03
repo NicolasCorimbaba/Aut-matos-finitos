@@ -15,38 +15,37 @@ Um autômato finito tem um conjunto de estados, alguns dos quais são denominado
   É necessário dois arquivos para o programa funcionar (arquivo ex1.json e o arquivo testes.cvs).
 
   ## ex1.JSON
-  {
-  "initial": 0,
-  "final" : [2],
-  "transitions": [
-      {
-      "from": "0",
-      "to": "0",
-      "read": "a"
-    },
     {
-      "from": "2",
-      "to": "2",
-      "read": "a"
-    },
-    {
-      "from": "1",
-      "to": "1",
-      "read": "b"
-    },
-    {
-      "from": "1",
-      "to": "2",
-      "read": "a"
-    },
-      {
-      "from": "0",
-      "to": "1",
-      "read": "b"
+    "initial": 0,
+    "final" : [2],
+    "transitions": [
+        {
+        "from": "0",
+        "to": "0",
+        "read": "a"
+        },
+        {
+        "from": "2",
+        "to": "2",
+        "read": "a"
+        },
+        {
+        "from": "1",
+        "to": "1",
+        "read": "b"
+        },
+        {
+        "from": "1",
+        "to": "2",
+        "read": "a"
+        },
+        {
+        "from": "0",
+        "to": "1",
+        "read": "b"
+        }
+    ]
     }
-  
-}
-
 ## testes.cvs
 
         ba;1
