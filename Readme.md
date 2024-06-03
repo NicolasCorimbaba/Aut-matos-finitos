@@ -44,7 +44,7 @@ Um autômato finito tem um conjunto de estados, alguns dos quais são denominado
         "to": "1",
         "read": "b"
         }
-    ]
+    
     }
 ## testes.cvs
 
