@@ -1,4 +1,4 @@
-#Simulador de Autômatos Finitos (está somente com o Automato determinístico finito).
+Simulador de Autômatos Finitos (está somente com o Automato determinístico finito).
 Um autômato finito tem um conjunto de estados, alguns dos quais são denominados estados finais. À medida que caracteres da string de entrada são lidos, o controle da máquina passa de um estado a outro, segundo um conjunto de regras de transição especificadas para o autômato, se após o último carácter o autômato encontra-se em um dos estados finais, a string foi reconhecida (ou seja, pertence à linguagem). Caso contrário, a string não pertence à linguagem aceita pelo autômato.
 
 ## Funcionalidades
