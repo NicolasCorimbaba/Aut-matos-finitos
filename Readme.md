@@ -1,5 +1,6 @@
-Simulador de Autômatos Finitos (está somente com o Automato determinístico finito).
-Um autômato finito tem um conjunto de estados, alguns dos quais são denominados estados finais. À medida que caracteres da string de entrada são lidos, o controle da máquina passa de um estado a outro, segundo um conjunto de regras de transição especificadas para o autômato, se após o último carácter o autômato encontra-se em um dos estados finais, a string foi reconhecida (ou seja, pertence à linguagem). Caso contrário, a string não pertence à linguagem aceita pelo autômato.
+# Simulador de Autômatos Finitos
+
+Um autômato finito tem um conjunto de estados, alguns dos quais são denominados estados finais. À medida que caracteres da string de entrada são lidos, o controle da máquina passa de um estado a outro, segundo um conjunto de regras de transição especificadas para o autômato. Se após o último caractere o autômato encontra-se em um dos estados finais, a string foi reconhecida (ou seja, pertence à linguagem). Caso contrário, a string não pertence à linguagem aceita pelo autômato.
 
 ## Funcionalidades
 
@@ -11,41 +12,24 @@ Um autômato finito tem um conjunto de estados, alguns dos quais são denominado
 - **Exportação e Importação**: Permite salvar autômatos em arquivos para posterior importação e reutilização.
 - **Interface Interativa**: Interface de linha de comando (CLI) amigável para facilitar a interação com o simulador.
 
-  ### Execução do programa
-  É necessário dois arquivos para o programa funcionar (arquivo ex1.json e o arquivo testes.cvs).
+## Execução do Programa
 
-  ## ex1.JSON
-    {
-    "initial": 0,
-    "final" : [2],
-    "transitions": [
-        {
-        "from": "0",
-        "to": "0",
-        "read": "a"
-        },
-        {
-        "from": "2",
-        "to": "2",
-        "read": "a"
-        },
-        {
-        "from": "1",
-        "to": "1",
-        "read": "b"
-        },
-        {
-        "from": "1",
-        "to": "2",
-        "read": "a"
-        },
-        {
-        "from": "0",
-        "to": "1",
-        "read": "b"
-        }
-    
-    }
+É necessário dois arquivos para o programa funcionar: `ex1.json` e `testes.csv`.
+
+### ex1.json
+
+```json
+{
+  "initial": 0,
+  "final": [2],
+  "transitions": [
+    { "from": "0", "to": "0", "read": "a" },
+    { "from": "2", "to": "2", "read": "a" },
+    { "from": "1", "to": "1", "read": "b" },
+    { "from": "1", "to": "2", "read": "a" },
+    { "from": "0", "to": "1", "read": "b" }
+  ]
+}
 ## testes.cvs
 
         ba;1
