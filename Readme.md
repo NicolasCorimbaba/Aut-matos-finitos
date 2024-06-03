@@ -32,12 +32,12 @@ Um autômato finito tem um conjunto de estados, alguns dos quais são denominado
 }
 ## testes.cvs
 
-        ba;1
-        aaaabbbbbaaaaa;1
-        abababab;0
-        bbbbbbbb;0
-        aaaaaaaaaaaa;0
-        aaaaabaaaaa;1
+ba;1
+aaaabbbbbaaaaa;1
+abababab;0
+bbbbbbbb;0
+aaaaaaaaaaaa;0
+aaaaabaaaaa;1
 
 ## Arquivo que o programa concede (resultados.csv)
 ba;1;1;0.00000540
