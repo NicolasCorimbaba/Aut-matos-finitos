@@ -14,7 +14,7 @@ Um autômato finito tem um conjunto de estados, alguns dos quais são denominado
   ## Execução do programa
   É necessário dois arquivos para o programa funcionar (arquivo ex1.json e o arquivo testes.cvs).
 
-  ### Arquivo JSON
+  ## ex1.JSON
   {
   "initial": 0,
   "final" : [2],
@@ -44,5 +44,22 @@ Um autômato finito tem um conjunto de estados, alguns dos quais são denominado
       "to": "1",
       "read": "b"
     }
-  ]
+  
 }
+
+## testes.cvs
+
+        ba;1
+        aaaabbbbbaaaaa;1
+        abababab;0
+        bbbbbbbb;0
+        aaaaaaaaaaaa;0
+        aaaaabaaaaa;1
+
+## Arquivo que o programa concede (resultados.csv)
+ba;1;1;0.00000540
+aaaabbbbbaaaaa;1;1;0.00000460
+abababab;0;0;0.00000310
+bbbbbbbb;0;0;0.00000190
+aaaaaaaaaaaa;0;0;0.00000240
+aaaaabaaaaa;1;1;0.00000220
